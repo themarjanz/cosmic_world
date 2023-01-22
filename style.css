@@ -17,8 +17,33 @@ body {
     padding: 0 30px;
 }
 
+.highlight {
+    color: #FF008E;
+}
+
+.primary-button {
+    outline: 0;
+    border: 0;
+    padding: 15px 20px;
+    background-image: linear-gradient(90deg, #c21273, #FF008E);
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 7px 0 #a5075e;
+    position: relative;
+    top: 0;
+    transition: .4s;
+}
+
+.primary-button:active {
+    top: 5px;
+    box-shadow: 0 2px 0 #a5075e;
+}
+
 header {
-    height: 100vh;
+    /* height: 100vh; */
     background-image: url(images/cloud.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -49,4 +74,43 @@ nav {
     color: #ffff;
     font-weight: 600;
     padding: 15px 10px;
+}
+
+/* bannner */
+.banner {
+    height: calc(100vh - 80px);
+    /* display: flex;
+    justify-content: space-between; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.banner-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+.banner-left h1 {
+    font-size: 40px;
+    color: #ffff;
+}
+
+.banner-left p {
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 20px 0;
+}
+
+.banner-right {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.banner-right img {
+    width: 100%;
 }
